@@ -2,30 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <!-- Header -->
-    <h1>Welcome to Trust the Processed Meats!</h1>
-    
-    <!-- subheader -->
-    <div>The only place to purchase the highest quality meat merchandise</div>
+    <div class="md:p-4 p-2">
+        <!-- logo w link to 6ers theme song-->
+        <div><a href="https://www.youtube.com/watch?v=gEKK3GVd150"><img class="w-20 object-center" src="ttpm.png"></a></div>
+        <!-- Header -->
+        <h1 class="font-bold text-2xl">
+            <span>Welcome to </span>
+            <span class="text-blue-700">Trust the Processed </span>
+            <span class="text-red-600">Meats!</span>
+        </h1>
+        
+        <!-- subheader -->
+        <div class="text-sm">The only place to purchase the highest quality meat merchandise</div>
+        
+        <!-- hyperlink bar -->
+        <div class="mt-10 text-center bg-blue-700 text-white font-semibold border-4 border-red-600"><a href="aboutus.html">About Us!</a></div>
 
-<!-- logo w link to about us-->
-<p>click the logo below to find more about our team</p>
-<div><a href="aboutus.html"><img src="ttpm.png" width="333" height="250" ></a></div>
-
-    <!-- description list with t-shirt images and links -->
-    <p></p>
-    <h3>Our Shirts!</h3>
-    <dl>
-        <dt><img src="shirt1.png" width="350" height="400"></dt>
-        <dl><a href="product1.html">Big Logo T</a></dl>
-        <dt><img src="shirt2.png" width="350" height="400"></dt>
-        <dl><a href="product2.html">Small Pocket Alternate Logo T</a></dl>
-    </dl>
-
+        <!-- description list with t-shirt images and links -->
+        <div class="font-bold mt-14"> Our Shirts!</div>
+        <div class="md:flex md:space-x-10 text-center">
+            <div class="md:w-1/2 mt-4">
+                <a href="product1.html"><img src="shirt1.png"></a>
+                <a href="product1.html">Big Logo T</a>
+            </div>
+            <div class="md:w-1/2 mt-4">
+                <a href="product2.html"><img src="shirt2.png"></a>
+                <a href="product2.html">Small Pocket Alternate Logo T</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
